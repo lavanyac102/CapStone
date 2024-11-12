@@ -1,17 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-25T16:14:04 IST" name="Default suite" finished-at="2024-10-25T16:14:15 IST" duration-ms="10409">
+  <suite started-at="2024-11-08T15:30:12 IST" name="CapeStoneProject" finished-at="2024-11-08T15:33:07 IST" duration-ms="174629">
     <groups>
     </groups>
-    <test started-at="2024-10-25T16:14:04 IST" name="Default test" finished-at="2024-10-25T16:14:15 IST" duration-ms="10409">
-      <class name="com.alert.proj.Capstone.AlertDemo">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.alert.proj.Capstone.AlertDemo@1b7cc17c]" started-at="2024-10-25T16:14:04 IST" name="beforeMethod" finished-at="2024-10-25T16:14:10 IST" duration-ms="5684" status="PASS">
+    <test started-at="2024-11-08T15:30:12 IST" name="demo" finished-at="2024-11-08T15:32:36 IST" duration-ms="143888">
+      <class name="com.calculator.project.Capstone.ButtonBasedCalculator">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.calculator.project.Capstone.ButtonBasedCalculator@6069db50]" started-at="2024-11-08T15:30:12 IST" name="setup" finished-at="2024-11-08T15:30:23 IST" duration-ms="10565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="calculator(java.lang.String)[pri:0, instance:com.calculator.project.Capstone.ButtonBasedCalculator@6069db50]" started-at="2024-11-08T15:30:23 IST" name="calculator" data-provider="inputValues" finished-at="2024-11-08T15:30:45 IST" duration-ms="22048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234+5687=]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:com.calculator.project.Capstone.ButtonBasedCalculator@6069db50]" started-at="2024-11-08T15:30:45 IST" name="cleanup" finished-at="2024-11-08T15:30:49 IST" duration-ms="4063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- com.calculator.project.Capstone.ButtonBasedCalculator -->
+      <class name="com.popups.proj.Capstone.Popups">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.popups.proj.Capstone.Popups@7b98f307]" started-at="2024-11-08T15:31:59 IST" name="beforeMethod" finished-at="2024-11-08T15:32:04 IST" duration-ms="5199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="handleAlert(java.lang.String,java.lang.String)[pri:0, instance:com.alert.proj.Capstone.AlertDemo@1b7cc17c]" started-at="2024-10-25T16:14:10 IST" name="handleAlert" data-provider="alert" finished-at="2024-10-25T16:14:15 IST" duration-ms="4584" status="PASS">
+        <test-method signature="handleAlerts()[pri:0, instance:com.popups.proj.Capstone.Popups@7b98f307]" started-at="2024-11-08T15:32:04 IST" name="handleAlerts" finished-at="2024-11-08T15:32:31 IST" duration-ms="26861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleAlerts -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.popups.proj.Capstone.Popups@7b98f307]" started-at="2024-11-08T15:32:31 IST" name="afterMethod" finished-at="2024-11-08T15:32:36 IST" duration-ms="5280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.popups.proj.Capstone.Popups -->
+      <class name="com.alert.proj.Capstone.AlertDemo">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.alert.proj.Capstone.AlertDemo@71d44a3]" started-at="2024-11-08T15:31:41 IST" name="beforeMethod" finished-at="2024-11-08T15:31:46 IST" duration-ms="4984" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="handleAlert(java.lang.String,java.lang.String)[pri:0, instance:com.alert.proj.Capstone.AlertDemo@71d44a3]" started-at="2024-11-08T15:31:46 IST" name="handleAlert" data-provider="alert" finished-at="2024-11-08T15:31:55 IST" duration-ms="8626" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,7 +83,318 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleAlert -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.alert.proj.Capstone.AlertDemo@71d44a3]" started-at="2024-11-08T15:31:55 IST" name="afterMethod" finished-at="2024-11-08T15:31:59 IST" duration-ms="3770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- com.alert.proj.Capstone.AlertDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.coordinates.proj.Capstone.CocodinatesAndDropDown">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@77888435]" started-at="2024-11-08T15:30:49 IST" name="beforeMethod" finished-at="2024-11-08T15:30:53 IST" duration-ms="3921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="dropdownandcoordinates(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@77888435]" started-at="2024-11-08T15:30:53 IST" name="dropdownandcoordinates" data-provider="coOrdinates" finished-at="2024-11-08T15:31:00 IST" duration-ms="7479" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Green]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Square]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownandcoordinates -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@77888435]" started-at="2024-11-08T15:31:00 IST" name="afterMethod" finished-at="2024-11-08T15:31:02 IST" duration-ms="2054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@77888435]" started-at="2024-11-08T15:31:02 IST" name="beforeMethod" finished-at="2024-11-08T15:31:06 IST" duration-ms="3669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="dropdownandcoordinates(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@77888435]" started-at="2024-11-08T15:31:06 IST" name="dropdownandcoordinates" data-provider="coOrdinates" finished-at="2024-11-08T15:31:15 IST" duration-ms="9330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[80]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Red]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Circle]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownandcoordinates -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@77888435]" started-at="2024-11-08T15:31:15 IST" name="afterMethod" finished-at="2024-11-08T15:31:22 IST" duration-ms="6701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.coordinates.proj.Capstone.CocodinatesAndDropDown -->
+      <class name="com.timer.proj.capstone.CountDownTimer">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.timer.proj.capstone.CountDownTimer@73a1e9a9]" started-at="2024-11-08T15:31:22 IST" name="beforeMethod" finished-at="2024-11-08T15:31:31 IST" duration-ms="8587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="timer(java.lang.String)[pri:0, instance:com.timer.proj.capstone.CountDownTimer@73a1e9a9]" started-at="2024-11-08T15:31:31 IST" name="timer" data-provider="timer" finished-at="2024-11-08T15:31:40 IST" duration-ms="8720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timer -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.timer.proj.capstone.CountDownTimer@73a1e9a9]" started-at="2024-11-08T15:31:40 IST" name="afterMethod" finished-at="2024-11-08T15:31:41 IST" duration-ms="1695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.timer.proj.capstone.CountDownTimer -->
+    </test> <!-- demo -->
+    <test started-at="2024-11-08T15:30:12 IST" name="demo1" finished-at="2024-11-08T15:33:07 IST" duration-ms="174624">
+      <class name="com.calculator.project.Capstone.ButtonBasedCalculator">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.calculator.project.Capstone.ButtonBasedCalculator@7586beff]" started-at="2024-11-08T15:30:12 IST" name="setup" finished-at="2024-11-08T15:30:41 IST" duration-ms="29059" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="calculator(java.lang.String)[pri:0, instance:com.calculator.project.Capstone.ButtonBasedCalculator@7586beff]" started-at="2024-11-08T15:30:41 IST" name="calculator" data-provider="inputValues" finished-at="2024-11-08T15:30:58 IST" duration-ms="16338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234+5687=]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:com.calculator.project.Capstone.ButtonBasedCalculator@7586beff]" started-at="2024-11-08T15:30:58 IST" name="cleanup" finished-at="2024-11-08T15:31:07 IST" duration-ms="9413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- com.calculator.project.Capstone.ButtonBasedCalculator -->
+      <class name="com.alert.proj.Capstone.AlertDemo">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.alert.proj.Capstone.AlertDemo@5542c4ed]" started-at="2024-11-08T15:32:44 IST" name="beforeMethod" finished-at="2024-11-08T15:32:57 IST" duration-ms="13036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="handleAlert(java.lang.String,java.lang.String)[pri:0, instance:com.alert.proj.Capstone.AlertDemo@5542c4ed]" started-at="2024-11-08T15:32:57 IST" name="handleAlert" data-provider="alert" finished-at="2024-11-08T15:33:01 IST" duration-ms="4283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lavanya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lavanya]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleAlert -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.alert.proj.Capstone.AlertDemo@5542c4ed]" started-at="2024-11-08T15:33:01 IST" name="afterMethod" finished-at="2024-11-08T15:33:07 IST" duration-ms="5756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.alert.proj.Capstone.AlertDemo -->
+      <class name="com.coordinates.proj.Capstone.CocodinatesAndDropDown">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@3b69e7d1]" started-at="2024-11-08T15:31:07 IST" name="beforeMethod" finished-at="2024-11-08T15:31:30 IST" duration-ms="22928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="dropdownandcoordinates(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@3b69e7d1]" started-at="2024-11-08T15:31:30 IST" name="dropdownandcoordinates" data-provider="coOrdinates" finished-at="2024-11-08T15:31:35 IST" duration-ms="4554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Green]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Square]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownandcoordinates -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@3b69e7d1]" started-at="2024-11-08T15:31:35 IST" name="afterMethod" finished-at="2024-11-08T15:31:44 IST" duration-ms="9738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@3b69e7d1]" started-at="2024-11-08T15:31:44 IST" name="beforeMethod" finished-at="2024-11-08T15:32:06 IST" duration-ms="21933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="dropdownandcoordinates(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@3b69e7d1]" started-at="2024-11-08T15:32:06 IST" name="dropdownandcoordinates" data-provider="coOrdinates" finished-at="2024-11-08T15:32:10 IST" duration-ms="3747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[80]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Red]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Circle]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownandcoordinates -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.coordinates.proj.Capstone.CocodinatesAndDropDown@3b69e7d1]" started-at="2024-11-08T15:32:10 IST" name="afterMethod" finished-at="2024-11-08T15:32:18 IST" duration-ms="7872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.coordinates.proj.Capstone.CocodinatesAndDropDown -->
+      <class name="com.timer.proj.capstone.CountDownTimer">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.timer.proj.capstone.CountDownTimer@815b41f]" started-at="2024-11-08T15:32:18 IST" name="beforeMethod" finished-at="2024-11-08T15:32:32 IST" duration-ms="14183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="timer(java.lang.String)[pri:0, instance:com.timer.proj.capstone.CountDownTimer@815b41f]" started-at="2024-11-08T15:32:32 IST" name="timer" data-provider="timer" finished-at="2024-11-08T15:32:38 IST" duration-ms="6102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timer -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.timer.proj.capstone.CountDownTimer@815b41f]" started-at="2024-11-08T15:32:38 IST" name="afterMethod" finished-at="2024-11-08T15:32:44 IST" duration-ms="5406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.timer.proj.capstone.CountDownTimer -->
+    </test> <!-- demo1 -->
+  </suite> <!-- CapeStoneProject -->
 </testng-results>

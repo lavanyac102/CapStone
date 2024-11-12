@@ -1,0 +1,37 @@
+<suite name = "CapeStoneProject" parallel="tests">
+	<test name="demo">
+	<parameter name="browserType" value="chrome"></parameter>
+		<classes>
+			<class name="com.calculator.project.Capstone.ButtonBasedCalculator"/>
+			<class name="com.coordinates.proj.Capstone.CocodinatesAndDropDown"/>
+			<class name="com.timer.proj.capstone.CountDownTimer"/>
+			<class name="com.alert.proj.Capstone.AlertDemo"/>
+			<class name="com.popups.proj.Capstone.Popups"/>
+		
+		</classes>
+	
+	
+	</test>
+
+<test name="demo1">
+	<parameter name="browserType" value="firefox"></parameter>
+		<classes>
+			<class name="com.calculator.project.Capstone.ButtonBasedCalculator"/>
+			<class name="com.coordinates.proj.Capstone.CocodinatesAndDropDown"/>
+			<class name="com.timer.proj.capstone.CountDownTimer"/>
+			<class name="com.alert.proj.Capstone.AlertDemo"/>
+			<!-- <class name="com.popups.proj.Capstone.Popups"/> -->
+		
+		</classes>
+
+	</test>
+<!--
+<test name="demo2">
+<parameter name="browserType" value="firefox"></parameter>
+<classes>
+<class name="com.popups.proj.Capstone.Popups"/>
+</classes>
+</test>
+
+-->
+</suite>

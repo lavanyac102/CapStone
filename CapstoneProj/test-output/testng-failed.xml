@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [CapeStoneProject]">
+  <test thread-count="5" parallel="tests" name="demo(failed)">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.calculator.project.Capstone.ButtonBasedCalculator">
+        <methods>
+          <include name="calculator" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="cleanup"/>
+        </methods>
+      </class> <!-- com.calculator.project.Capstone.ButtonBasedCalculator -->
+    </classes>
+  </test> <!-- demo(failed) -->
+</suite> <!-- Failed suite [CapeStoneProject] -->

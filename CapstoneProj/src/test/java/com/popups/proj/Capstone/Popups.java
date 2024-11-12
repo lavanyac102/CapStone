@@ -8,10 +8,14 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class Popups {
 	private WebDriver driver;
@@ -19,13 +23,27 @@ public class Popups {
 	private Alert a;
 	WebDriverWait wait;
 	
+	@Parameters("browserType")
 	@BeforeMethod
-	  public void beforeMethod() {
-		  driver = new ChromeDriver();
+	  public void beforeMethod(String browser) {
+		if(browser.equalsIgnoreCase("chrome")) {
+			  driver = new ChromeDriver();
+		  }
+		  else if(browser.equalsIgnoreCase("firefox"))
+		  {
+			  driver = new FirefoxDriver();
+		  }
+		
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			baseURL="https://webdriveruniversity.com/Popup-Alerts/index.html";
 			
+	  }
+	
+	  @AfterMethod
+	  public void afterMethod()
+	  {
+		  driver.quit();
 	  }
   @Test
   public void handleAlerts() throws InterruptedException {
@@ -71,6 +89,7 @@ public class Popups {
 	  pp.clickajaxLoaderButton();
 	  try
 	  {
+		  SoftAssert sa = new SoftAssert();
 		  WebElement loader=  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(" //span[@id='button1']/p")));
 		//  wait.until(ExpectedConditions.invisibilityOf(loader));
 		  loader.click();
